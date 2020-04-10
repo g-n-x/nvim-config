@@ -2,6 +2,7 @@ set number relativenumber
 set tabstop=4
 set shiftwidth=4
 set mouse=a      " enable all mouse features
+set list
 set lcs+=space:· " whitespace is represented as ·
 
 " set syntax highlighting options.
@@ -13,7 +14,7 @@ color gruvbox
 
 hi! Normal ctermbg=NONE guibg=NONE
 
-" plugins
+"plugins
 call plug#begin()
 
 Plug 'scrooloose/nerdtree'
