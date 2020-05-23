@@ -20,6 +20,7 @@ call plug#begin()
 Plug 'scrooloose/nerdtree'
 Plug 'vim-airline/vim-airline'
 Plug 'flazz/vim-colorschemes'
+Plug 'wincent/command-t'
 
 " autocomplete stuff for neovim
 if has('nvim')
