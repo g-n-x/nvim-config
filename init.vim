@@ -4,6 +4,7 @@ set shiftwidth=4
 set mouse=a      " enable all mouse features
 set list
 set lcs+=space:· " whitespace is represented as ·
+set clipboard+=unnamedplus
 
 " set syntax highlighting options.
 syntax on
