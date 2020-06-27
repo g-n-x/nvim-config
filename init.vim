@@ -11,7 +11,7 @@ syntax on
 
 " Color scheme
 set background=dark
-color gruvbox
+" color gruvbox
 
 hi! Normal ctermbg=NONE guibg=NONE
 
@@ -23,14 +23,16 @@ Plug 'vim-airline/vim-airline'
 Plug 'flazz/vim-colorschemes'
 Plug 'wincent/command-t'
 
-" autocomplete stuff for neovim
-if has('nvim')
-  Plug 'Shougo/deoplete.nvim', { 'do': ':UpdateRemotePlugins' }
-else
-  Plug 'Shougo/deoplete.nvim'
-  Plug 'roxma/nvim-yarp'
-  Plug 'roxma/vim-hug-neovim-rpc'
-endif
-let g:deoplete#enable_at_startup = 1
-
 call plug#end()
+
+" some autocmd
+autocmd vimenter *.c NERDTree
+autocmd bufwritepost *.c :!ctags -R .
+"autocmd shellcmdpost * <Enter> " this one is not working :(
+
+" mappings
+vnoremap <C-c> "+y
+inoremap <C-v> <Esc>"+P
+noremap <C-s> :w<Enter>
+noremap <C-q> :qa<Enter>
+nmap <silent> <Leader>f <Plug>(CommandTTag)
