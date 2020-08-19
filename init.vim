@@ -29,6 +29,7 @@ Plug 'vifm/vifm.vim'
 Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
 Plug 'junegunn/fzf.vim'
 Plug 'tpope/vim-fugitive'
+Plug 'mg979/vim-visual-multi', {'branch': 'master'}
 
 call plug#end()
 
