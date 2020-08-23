@@ -44,6 +44,8 @@ inoremap <C-v> <Esc>"+P
 noremap <C-s> :w<Enter>
 noremap <C-q> :qa<Enter>
 nmap <silent> <Leader>f <Plug>(CommandTTag)
+noremap <C-l> gt " previous tab
+noremap <C-a> gT " next tab
 
 " moving lines
 nnoremap <A-j> :m .+1<CR>==
