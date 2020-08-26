@@ -33,6 +33,8 @@ Plug 'mg979/vim-visual-multi', {'branch': 'master'}
 
 call plug#end()
 
+
+
 " some autocmd
 autocmd vimenter *.c NERDTree
 autocmd bufwritepost *.c :!ctags -R .
