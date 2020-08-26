@@ -33,7 +33,8 @@ Plug 'mg979/vim-visual-multi', {'branch': 'master'}
 
 call plug#end()
 
-
+" turn on powerline fonts
+let g:airline_powerline_fonts=1
 
 " some autocmd
 autocmd vimenter *.c NERDTree
